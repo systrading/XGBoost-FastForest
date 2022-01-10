@@ -19,10 +19,10 @@ unset(EXPERIMENTAL_TMVA_SUPPORT CACHE)
 include_directories(include)
 
 add_subdirectory (src)
-add_subdirectory (test)
+# add_subdirectory (test)
 
-enable_testing ()
-add_test (NAME fastforestTest COMMAND Test WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/test)
+# enable_testing ()
+# add_test (NAME fastforestTest COMMAND Test WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/test)
 
 add_library (fastforest SHARED ${SOURCE_FILES})
 
